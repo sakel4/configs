@@ -63,4 +63,5 @@ Read the default key bindings [here](https://tmuxcheatsheet.com/)
 --------------------------------------------------------------------
 
 #### **Based on**:
-_BashBunni tmux configuration ([bushbunni dotfiles](https://github.com/bashbunni/dotfiles))_
+- _BashBunni tmux configuration ([bushbunni dotfiles](https://github.com/bashbunni/dotfiles))_
+- _Hamvocke tmux configuration ([hamvocke dotfiles](https://github.com/hamvocke/dotfiles))_
