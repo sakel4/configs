@@ -1,16 +1,17 @@
-# Dependencies:
+# Terminal Multiplexer Configuration
+
+## Dependencies:
 
 1. tmux
 2. tmux plugin manager (_[github repo](https://github.com/tmux-plugins/tpm)_)
+3. Font of your choice (_[Nerd fonts](https://www.nerdfonts.com/font-downloads)_)
 
-
-# Installation:
+## Installation:
 1. Install tmux
 
     ```sh
     apt-get install tmux
     ```
-
 2. Install tmux plugin manager
 
     ```sh
@@ -33,10 +34,12 @@
     ```sh
     tmux new
     ```
-    b. Install the plugins
+    b. Install the plugins (use the following key combination)
 
     ```sh
-    <Press> ctrl + b + I
+    # Default prefix is Ctrl + b
+    # This config uses Ctrl + Space as the prefix
+    <prefix> + I
     ```
 6. Copy the fonts to your home directory (if the fonts are not already installed)
 
@@ -49,6 +52,13 @@
     fc-cache -f -v
     ```
 8. Set the bash font to the installed font (by the preferences menu)
+
+## Key Bindings:
+
+- Default prefix is `Ctrl + b`
+- Custom prefix is `Ctrl + Space`
+
+Read the default key bindings [here](https://tmuxcheatsheet.com/)
 
 --------------------------------------------------------------------
 
