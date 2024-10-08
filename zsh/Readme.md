@@ -4,7 +4,7 @@
 - oh my zsh (_[oh my zsh](https://ohmyz.sh/)_)
 - zsh-syntax-highlighting (_[zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)_)
 - zsh-autosuggestions (_[zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)_)
-- spaceship prompt (_[spaceship](https://github.com/spaceship-prompt/spaceship-prompt)_)
+- powerlevel10k (_[poerlevel10k](https://github.com/romkatv/powerlevel10k?tab=readme-ov-file#installation)_)
 
 ## Installation:
 
@@ -39,13 +39,15 @@
     ```sh
     git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
     ```
-7. Install spaceship prompt
+7. Install Powerlevel10k recomended fonts (after that you need to change the terminal font to the recomended font)
+
+      ```sh
+        cp -r fonts/* ~/.local/share/fonts
+        ```
+8. Install Powerlevel10k
 
     ```sh
-    # clone the repo to the Zsh custom theme directory
-    git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
-    # symlink it
-    ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
+    git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
     ```
 8. Source the `.zshrc` file
 
