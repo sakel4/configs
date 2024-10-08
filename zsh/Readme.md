@@ -5,6 +5,7 @@
 - zsh-syntax-highlighting (_[zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)_)
 - zsh-autosuggestions (_[zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)_)
 - powerlevel10k (_[poerlevel10k](https://github.com/romkatv/powerlevel10k?tab=readme-ov-file#installation)_)
+- starship (_[starship](https://github.com/starship/starship?tab=readme-ov-file)_)
 
 ## Installation:
 
@@ -73,4 +74,5 @@
 
 
 ## Resources
-- https://scottspence.com/posts/my-zsh-config
+- Article: https://scottspence.com/posts/my-zsh-config
+- Starship theme: https://starship.rs/presets/gruvbox-rainbow
