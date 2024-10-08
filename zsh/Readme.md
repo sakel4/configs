@@ -10,6 +10,7 @@
 
 1. Install zsh
 
+
     ```sh
     sudo apt install zsh
     ```
@@ -22,7 +23,10 @@
 
     ```sh
     rm ~/.zshrc
-    cp .zshrc ~/.zshrc
+    # for powerlevel10k
+    cp .zshrc_powerlevel10k ~/.zshrc
+    # for starship
+    cp .zshrc_starship ~/.zshrc
     ```
 4. Create zsh allias file
 
@@ -39,17 +43,29 @@
     ```sh
     git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
     ```
-7. Install Powerlevel10k recomended fonts (after that you need to change the terminal font to the recomended font)
+7. Install fonts (after that you need to change the terminal font to the recomended font)
 
       ```sh
-        cp -r fonts/* ~/.local/share/fonts
+        # for Powerlevel10k
+        cp -r fonts_powerlevel10k/* ~/.local/share/fonts
+        # for Starship
+        cp -r fonts_starship/* ~/.local/share/fonts
         ```
-8. Install Powerlevel10k
+8. Install Theme
 
     ```sh
+    # Install Powerlevel10k
     git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+    # Install Starship
+    curl -sS https://starship.rs/install.sh | sh
     ```
-8. Source the `.zshrc` file
+9. Starship configuration (skip to step 10 if you chose powerlevel10k)
+
+    ```sh
+    mkdir -p ~/.config && cp .starship.toml ~/.config/starship.toml
+    ```
+
+10. Source the `.zshrc` file
 
     ```sh
     source ~/.zshrc
